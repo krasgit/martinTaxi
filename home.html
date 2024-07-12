@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Taxi Booking Page</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATfUK7UEDKu2wd74liQ9tsPQdV0gqZe74&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="fancy-text" data-text="Martin Taxi">Martin Taxi</h1>
+            <nav>
+                <ul>
+                    
+                    <li><a href="about.html">За Нас</a></li>
+                    
+                    <li><a href="contact.html">Затруднения?</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <h3>Направете поръчка</h3>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="from">От</label>
+                        <input type="text" id="from" name="from" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="to">До</label>
+                        <input type="text" id="to" name="to" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="language">Предпочитани езици</label>
+                        <select id="language" name="language" required>
+                            <option value="bulgarian">Български</option>
+                            <option value="english">Английски</option>
+                            <option value="spanish">Испански</option>
+                            <option value="ukranian">Украински</option>
+                            <option value="german">Немски</option>
+                            <option value="russian">Рурски</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Допълнителни изисквания</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Поръчай</button>
+                </form>
+            </div>
+        </div>
+        <div id="map"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Martin Taxi. All rights reserved.</p>
+    </footer>
+
+    <script src="js.js">
+       
+    </script>
+</body>
+</html>
