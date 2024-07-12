@@ -40,7 +40,11 @@ header h1 {
     font-size: 2em;
     font-family: 'Courier New', Courier, monospace;
 }
-
+p {
+    text-align:center;
+    font-size: 1em;
+    color:black;
+}
 nav ul {
     list-style: none;
     display: flex;
