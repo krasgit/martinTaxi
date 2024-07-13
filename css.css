@@ -262,6 +262,31 @@ footer {
 .chatbox-toggle:hover {
     background: #0d6efd;
 }
+.rating-container {
+    margin-top: 20px;
+    text-align: center;
+}
+.rating {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.star {
+    font-size: 2em;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.star:hover,
+.star.selected,
+.star.selected ~ .star {
+    color: #f0ad4e;
+}
+#rating-value {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+}
 @media (max-width: 600px) {
     .header-container {
         flex-direction: column;
