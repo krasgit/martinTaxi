@@ -1,0 +1,1 @@
+Same with the pages, this styles folder is for css files.
