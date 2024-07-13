@@ -53,7 +53,7 @@ const stars = document.querySelectorAll('.star');
             const rating = this.getAttribute('data-value');
             ratingValue.textContent = `You rated this ride ${rating} star(s)`;
             
-            // Additional message based on rating
+            
             switch (parseInt(rating)) {
                 case 1:
                     ratingMessage.textContent = "Благодарим Ви за оценката.";
