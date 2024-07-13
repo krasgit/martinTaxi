@@ -5,13 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATfUK7UEDKu2wd74liQ9tsPQdV0gqZe74&callback=initMap" async defer></script>
-    <title>Martin Taxi tracking</title>
+    <title>Martin Taxi Tracking</title>
 </head>
 <body>
     <main>
         <div id="map"></div>
+        <div class="chatbox" id="chatbox">
+            <div class="chatbox-header">
+                <h3>Чат с шофьора.</h3>
+                <button id="closeChat">x</button>
+            </div>
+            <div class="chatbox-body" id="chatbox-body">
+                <div class="chatbox-messages" id="chatbox-messages"></div>
+            </div>
+            <div class="chatbox-footer">
+                <input type="text" id="chatInput" placeholder="Напиши съобщение към шофьора...">
+                <button id="sendButton">Изпрати</button>
+            </div>
+        </div>
+        <button class="chatbox-toggle" id="chatbox-toggle">Чат</button>
     </main>
 </body>
-
 <script src="js.js"></script>
 </html>
